@@ -30,7 +30,43 @@
 <h2>
 <a id="how-does-it-work" class="anchor" href="#how-does-it-work" aria-hidden="true"><span class="octicon octicon-link"></span></a>How does it work?</h2>
 
-<p>VASL allows you to place HTML fragments next to your boards. This enables you to create pretty much any kind of graphical play aid. Usually these play aids are based on an HTML table.</p>
+<p>VASL allows you to place HTML fragments next to your boards. This enables you to create pretty much any kind of graphical play aid. Usually these play aids are based on an HTML table. The HTML is copied into a <b>Label</b> (found under <i>Draggable Oberlays</i>) in VASL:</p>
+
+<img src="./assets/label.png"/>
+
+<p>You then procees do copy in the HTML for your table like this:</p>
+
+<img src="./assets/label-html.png"/>
+
+<p>Once you've pasted it in, it looks like this and you're free to add phase wheel, turn and EC markers etc.:</p>
+
+<img src="./assets/scenario-info.png" />
+
+<p>The source for this HTML table can be found <a href="https://raw.githubusercontent.com/vasl-developers/playaids/master/scenario.html">here</a>. You can adjust this table according to your needs, for example modify the number of turns. An example row for turns is written like this:</p> 
+
+<pre>
+  &lt;TR>
+    &lt;TD class="turn">1&lt;/TD>
+    &lt;TD class="turn">2&lt;/TD>
+    &lt;TD class="turn">3&lt;/TD>
+  &lt;/TR>
+</pre>
+
+<p>This will add three boxes for turns 1, 2 and 3 to your play aid. TR is a table row and TD is a table data element in HTML. The important bit here, is that you use the <i>class</i> attribute to assign a rendering type to your TD, giving it a white background. There are other types that you can use, most of which are used in the example source:</p>
+<ul>
+  <li>phasewheel</li>
+  <li>scenario</li>
+  <li>token</li>
+  <li>turn</li>
+  <li>american</li>
+  <li>german</li>
+  <li>british</li>
+  <li>russian</li>
+  <li>japanese</li>
+</ul>
+
+<h2>Other examples</h2>
+
 
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>

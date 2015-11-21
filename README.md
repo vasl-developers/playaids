@@ -8,9 +8,6 @@ The VASL Play Aids repository contains templates for creating visually pleasing 
 
 VASL allows you to place HTML fragments next to your boards. This enables you to create pretty much any kind of graphical play aid. Usually these play aids are based on an HTML table.
 
-
-
-
 ## License
 
 ![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png "Creative Commons License")
